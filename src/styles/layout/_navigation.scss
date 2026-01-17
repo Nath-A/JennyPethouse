@@ -1,0 +1,34 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.menu
+{
+
+    &__list
+    {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    &__item
+    {}
+
+    &__link
+    {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: clamp(1.2rem, 5vw, 2rem);
+        text-transform: uppercase;
+
+        ;
+
+        &:hover
+        {
+            color: $color-primary;
+        }
+    }
+}

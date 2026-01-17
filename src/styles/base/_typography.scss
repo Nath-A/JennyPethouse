@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+// Notes 
+// Use a font size between 15 and 25px for body text
+// Use really big font sizes for headings (H1 60px, H2/H3 32px)
+// Reduce font-weight for bigger text (H1 300, H2 400)
+// Use a line-height between 120% and 150%
+// 45 to 90 characters per line is best for readability
+
+body
+{
+    font-family: $font-body;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-black;
+}
+
+h1
+{
+    font-family: $font-display;
+    font-size: 5rem;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.2;
+}
+
+h2
+{
+    font-family: $font-display;
+    font-size: 4rem;
+    font-size: clamp(3rem, 5vw, 4rem);
+    line-height: 1.3;
+}
+
+h3
+{
+    font-family: $font-accent;
+    font-size: 3.5rem;
+    font-size: clamp(2.8rem, 5vw, 3.5rem);
+    line-height: 1.4;
+}
+
+h4
+{
+    font-family: $font-accent;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+a
+{
+    font-family: $font-body;
+    font-weight: 600;
+    transition: color 0.2 ease;
+}
