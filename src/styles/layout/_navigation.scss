@@ -3,19 +3,26 @@
 
 .menu
 {
+    margin: 2rem;
 
     &__list
     {
         display: flex;
-        gap: 20px;
+        // gap: 20px;
         list-style: none;
         padding: 0;
         margin: 0;
         justify-content: space-around;
+        align-items: center;
     }
 
     &__item
     {}
+
+    &__logo
+    {
+        width: 175px;
+    }
 
     &__link
     {
