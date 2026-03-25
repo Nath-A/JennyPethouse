@@ -1,0 +1,16 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.header
+{
+    background-color: $color-black;
+
+    &__baseline
+    {}
+
+    &__text
+    {
+        color: $color-white;
+
+    }
+}
