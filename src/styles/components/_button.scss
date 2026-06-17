@@ -3,7 +3,7 @@
 
 .button
 {
-    &__CTA
+    &--cta
     {
         background-color: $color-primary;
         color: $color-white;
@@ -12,6 +12,10 @@
         padding: 1rem 2rem;
         text-transform: uppercase;
         border: 0.2rem solid $color-primary;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 0.5rem;
 
         &:hover
         {
@@ -19,5 +23,21 @@
             color: $color-primary
         }
 
+        &::before
+        {
+            content: '';
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-color: currentColor;
+            mask-image: url('../../assets/icons/whatsapp-brands-solid-full.svg');
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center;
+            // fill: $color-white;
+        }
+
     }
+
+
 }
