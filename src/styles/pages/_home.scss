@@ -1,0 +1,90 @@
+@use '../base' as *;
+@use '../abstracts' as *;
+
+.about
+{
+    padding: 3rem 0;
+
+    &__container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+    }
+
+    &__image
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 8rem;
+    }
+
+    &__paragraphs
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    &__benefits
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        grid-template-rows: auto auto;
+
+    }
+
+    &__benefit
+    {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+
+        &-icon
+        {
+            width: 5rem;
+            height: 5rem;
+            padding: 1rem;
+            background-color: $color-primary;
+            border-radius: 1rem;
+            grid-row: 1 / span 2;
+        }
+
+        &-title
+        {
+            font-family: $font-body;
+            font-size: 1.6rem;
+            line-height: 1.4;
+        }
+
+        &-description
+        {}
+    }
+}
+
+.services
+{
+    background-color: $color-primary;
+    text-align: center;
+
+    &__title
+    {
+        color: $color-white;
+
+    }
+
+    &__subtitle
+    {
+        display: block;
+        font-family: $font-accent;
+        font-weight: 400;
+    }
+
+    &__description
+    {
+        color: $color-white;
+    }
+}
