@@ -6,6 +6,7 @@
 
 ## What
 - Site vitrine pour le service de garde d’animaux Jenny PetHouse (chiens, chats, NAC).
+![Maquette du site](jennypethouse_maquette.jpg)
 
 ## Why
 - Mettre en valeur la qualité et la fiabilité du service, faciliter la prise de contact et rassurer les clients.
